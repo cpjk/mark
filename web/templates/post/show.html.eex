@@ -4,7 +4,7 @@
 
   <li>
     <strong>Content:</strong>
-    <%= @post.content %>
+    <%= raw Earmark.to_html(@post.content) %>
   </li>
 
 </ul>
